@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200&family=Roboto+Condensed:wght@300&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Outfit', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p{
+  font-size: 1.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1{
+  font-size: 6rem;
+}
+
+.app{
+  height: 120vh;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.app:before{
+  content: '';
+  background: url('./assets/background.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+.container{
+  max-width: 700px;
+  height: 600px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.top{
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.description{
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(269deg);
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 80px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+
+.search{
+  text-align: center;
+  padding: 1rem;
+}
+
+input{
+  padding: .7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 5px;
+  font-size: 20px;
+  height: 43px;
+  width: 43px;
+  border-radius: 70%;
+  margin: 0 4px;
+  cursor: pointer;
+  border: none;
 }
