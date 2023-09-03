@@ -19,7 +19,8 @@ h1{
 }
 
 .app{
-  height: 120vh;
+
+  min-height: 100vh;
   width: 100%;
   position: relative;
   background-color: rgba(0, 0, 0, 0.4);
@@ -59,12 +60,13 @@ h1{
   right: -90%;
   transform-origin: 0 0;
   transform: rotate(269deg);
+  font-size: 30px;
 }
 
 .bottom{
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 80px;
+  margin-bottom: 10px;
   text-align: center;
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.1);
